@@ -1,0 +1,53 @@
+:root {
+  --card-height: 420px;
+  --roundness: 1rem;
+}
+
+/* FUNDO */
+body {
+  background: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* CARD */
+.tarot-card {
+  height: var(--card-height);
+  border-radius: var(--roundness);
+  background-image: url("https://f2.toyhou.se/file/f2-toyhou-se/images/108181203_lxSI8IQieB2VrEP.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* OVERLAY TAROT */
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--roundness);
+  background-image: url("https://f2.toyhou.se/file/f2-toyhou-se/images/108211291_Varmp19tWi0AZSe.png");
+  background-size: cover;
+  display: none;
+}
+
+.collapse.show {
+  display: block;
+}
+
+/* OVERLAY TEXTO */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box {
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 500px;
+}
